@@ -1,0 +1,578 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"categ",
+				"category_root"
+			],
+			[
+				"atta",
+				"attachments"
+			],
+			[
+				"attach",
+				"attached"
+			],
+			[
+				"find",
+				"find_or_create_by"
+			],
+			[
+				"system",
+				"system_node"
+			],
+			[
+				"a",
+				"adForm\tproperty"
+			],
+			[
+				"api",
+				"api-language.service\tscript"
+			],
+			[
+				"part",
+				"partner_ads"
+			],
+			[
+				"P",
+				"PartnerAd"
+			],
+			[
+				"up",
+				"update"
+			],
+			[
+				"form",
+				"form-group"
+			],
+			[
+				"Eve",
+				"EventEmitter\talias"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"text",
+				"text-center"
+			],
+			[
+				"Creden",
+				"Credentials\talias"
+			],
+			[
+				"cate",
+				"category_root"
+			],
+			[
+				"par",
+				"partner_ad"
+			],
+			[
+				"Ca",
+				"CategoryNode"
+			],
+			[
+				"syste",
+				"system_category"
+			],
+			[
+				"sys",
+				"system_category"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"cl",
+				"class\tclass …"
+			],
+			[
+				"_",
+				"_lang\tproperty"
+			],
+			[
+				"json",
+				"json_params_only_array"
+			],
+			[
+				"l",
+				"langRTL\tgetter"
+			],
+			[
+				"la",
+				"_langRTL\tproperty"
+			],
+			[
+				"log",
+				"loginEmitter\tproperty"
+			],
+			[
+				"back",
+				"background-repeat\tproperty"
+			],
+			[
+				"name_",
+				"name_he"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/hadi/Documents/tickets"
+	],
+	"file_history":
+	[
+		"/home/hadi/Documents/fitussi/fitussi/app/models/consignment_product.rb",
+		"/home/hadi/Documents/fitussi/fitussi/db/schema.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/controllers/consignment_notes_controller.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/consignment_note.rb",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/20210523090801_remove_versions_consignment_notes.rb",
+		"/home/hadi/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.7.0/lib/active_admin/resource/routes.rb",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/20210523090657_drop_versions_consignment_notes.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/controllers/api_base_controller.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/views/orders/_consignment_note.html.erb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/stock_instance.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/instance_demand.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/consignment_department.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/product_order.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/product_schedule.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/views/quotes/_quote.html.erb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/accessory_rent.rb",
+		"/home/hadi/Documents/fitussi/fitussi/config/database.yml",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/product_order_range.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/department_order.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/quote.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/controllers/orders_controller.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/order.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/controllers/quotes_controller.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/views/orders/_order-v2.html.erb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/instance_rent.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/controllers/users_controller.rb",
+		"/home/hadi/Documents/fitussi/fitussi/config/routes.rb",
+		"/home/hadi/Documents/fitussi/fitussi/config/initializers/devise_token_auth.rb",
+		"/home/hadi/Documents/fitussi/fitussi/config/initializers/session_store.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/department_schedule.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/controllers/products_controller.rb",
+		"/home/hadi/Documents/fitussi/fitussi/postgres_alter_all_tables_owner.sql",
+		"/home/hadi/Documents/fitussi/fitussi/config/initializers/devise.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/dates_range.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/rent_event.rb",
+		"/home/hadi/Documents/fitussi/fitussi/Gemfile",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/versions/consignment_note.rb",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/20210404171814_create_versions_consignment_notes.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/concerns/with_active_admin_comments.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/controllers/stock_instances_controller.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/views/orders/_header.html.erb",
+		"/home/hadi/Documents/fitussi/fitussi/app/views/quotes/_header.html.erb",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/20210305091539_create_accessory_rents.rb",
+		"/home/hadi/Documents/fitussi/fitussi/db/product_order_ranges.sql",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/outsource_product_schedule.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/catalog_product_schedule.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/accessory.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/product.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/set_product.rb",
+		"/home/hadi/Documents/fitussi/fitussi-rails.sublime-project",
+		"/home/hadi/Documents/fitussi/fitussi/config/environments/development.rb",
+		"/home/hadi/Documents/fitussi/fitussi/unindexed_foreign_keys.txt",
+		"/home/hadi/Documents/fitussi/fitussi/b.txt",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/off.20210216082547_add_missing_indexes.rb.off",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/20210218200716_add_indexes.rb",
+		"/home/hadi/.rvm/gems/ruby-2.6.3/gems/pg_query_analyzer-0.2/lib/pg_query_analyzer.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/concerns/dates_ranged_resource.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/concerns/rent_eventable.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/ability.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/controllers/clients_controller.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/user.rb",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/20210215112648_add_role_to_users.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/basic_product.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/views/orders/_order.html.erb",
+		"/home/hadi/Documents/fitussi/fitussi/config/locales/he.yml",
+		"/home/hadi/Documents/fitussi/fitussi/app/controllers/test_controller.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/consignment_product_range.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/views/consignment_notes/consignment_note_pdf.pdf.erb",
+		"/home/hadi/Documents/fitussi/fitussi/config/locales/en.yml",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/client.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/controllers/system_configurations_controller.rb",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/20210205095714_rename_order_version_in_consignment_notes.rb",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/20210203191421_remove_columns_from_user_settings.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/views/test/tester.html.erb",
+		"/home/hadi/Documents/fitussi/fitussi/app/views/shared/_header.html.erb",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/20210203143640_create_consignment_notes.rb",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/20210203144041_create_consignment_departments.rb",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/20210203154031_create_consignment_products.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/system_configuration.rb",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/20210202170219_create_system_configurations.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/basic_stock_instance.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/generic_stock_instance.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/generic_product.rb",
+		"/home/hadi/Documents/fitussi/fitussi/lib/tasks/utils.rake",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/client_payment_method.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/admin/user_settings.rb",
+		"/home/hadi/.rvm/gems/ruby-2.6.3/gems/paper_trail-10.3.1/lib/paper_trail/version_concern.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/admin_user.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/admin/users.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/application_record.rb",
+		"/home/hadi/Documents/fitussi/fitussi/config/environments/production.rb",
+		"/home/hadi/Documents/fitussi/fitussi/config/initializers/rack_mini_profiler.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/item_demand.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/views/orders/order_pdf.pdf.erb",
+		"/home/hadi/Documents/fitussi/fitussi/app/views/test/tester.pdf.erb",
+		"/home/hadi/Documents/fitussi/fitussi/app/admin/quotes.rb",
+		"/home/hadi/Documents/fitussi/fitussi/config/initializers/filter_parameter_logging.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/admin/rent_events.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/concerns/calculates_dates_diff.rb",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/20201213212439_create_versions_quotes.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/versions/quote.rb",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/20201213214246_set_default_api_version_for_orders.rb",
+		"/home/hadi/Documents/fitussi/fitussi/config/application.rb",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/20201206225328_add_api_version_to_orders.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/admin/item_demands.rb",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/20201207105640_create_instance_demands.rb",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/20201207101259_create_product_order_ranges.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/admin/orders.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/admin/product_orders.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/admin/department_orders.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/admin/dates_ranges.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/admin/accessories.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/admin/departments.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/admin/admin_users.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/admin/paper_trail_versions.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/admin/product_order_ranges.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/admin/instance_demands.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/admin/instance_rents.rb",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/20201207103334_create_item_demands.rb",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/20201207115615_create_instance_rents.rb",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/20201206222155_create_department_orders.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/concerns/calculates_dates_diff.rb.off",
+		"/home/hadi/Documents/fitussi/fitussi/app/views/shared/_styles.html.erb",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/20201106145404_add_department_schedule_to_rent_events.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/views/test/_quote.html.erb",
+		"/home/hadi/Documents/fitussi/fitussi/db/migrate/20201025150037_create_versions_tables.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/versions/order.rb",
+		"/home/hadi/Documents/fitussi/fitussi/app/models/versions/rent_event.rb"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 523.0
+	},
+	"pinned_build_system": "",
+	"project": "tickets.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"route",
+				"fitussi/config/routes.rb"
+			],
+			[
+				"reout",
+				"activeadmin-2.7.0/lib/active_admin/resource/routes.rb"
+			],
+			[
+				"rout",
+				"fitussi/config/routes.rb"
+			],
+			[
+				"sche",
+				"fitussi/db/schema.rb"
+			],
+			[
+				"dat",
+				"fitussi/config/database.yml"
+			],
+			[
+				"datya",
+				"fitussi/config/database.yml"
+			],
+			[
+				"sch",
+				"fitussi/db/schema.rb"
+			],
+			[
+				"data",
+				"fitussi/config/database.yml"
+			],
+			[
+				"he",
+				"fitussi/config/locales/he.yml"
+			],
+			[
+				"reoutes",
+				"activeadmin-2.7.0/lib/active_admin/resource/routes.rb"
+			],
+			[
+				"gem",
+				"fitussi/Gemfile"
+			],
+			[
+				"ge",
+				"fitussi/Gemfile"
+			],
+			[
+				"routes",
+				"fitussi/config/routes.rb"
+			],
+			[
+				"rou",
+				"fitussi/config/routes.rb"
+			],
+			[
+				"uti",
+				"fitussi/lib/tasks/utils.rake"
+			],
+			[
+				"util",
+				"fitussi/lib/tasks/utils.rake"
+			],
+			[
+				"-v2",
+				"fitussi/app/views/orders/_order-v2.html.erb"
+			],
+			[
+				"geml",
+				"fitussi/Gemfile"
+			],
+			[
+				"see",
+				"fitussi/db/seeds.rb"
+			],
+			[
+				"gemfi",
+				"fitussi/Gemfile"
+			],
+			[
+				"deplo",
+				"mina-1.2.3/data/deploy.rb"
+			],
+			[
+				"routes.",
+				"fitussi/config/routes.rb"
+			],
+			[
+				"seed",
+				"fitussi/db/seeds.rb"
+			],
+			[
+				"import_",
+				"fitussi/db/import_clients.rb"
+			],
+			[
+				"devise.",
+				"shutaf/config/initializers/devise.rb"
+			],
+			[
+				"dep",
+				"shutaf/config/deploy.rb"
+			],
+			[
+				"devise",
+				"shutaf/config/initializers/devise.rb"
+			],
+			[
+				"user.r",
+				"shutaf/app/models/user.rb"
+			],
+			[
+				"fdeplo",
+				"shutaf/config/deploy.rb"
+			],
+			[
+				"he.",
+				"shutaf/config/locales/he.yml"
+			],
+			[
+				"pr",
+				"shutaf/config/environments/production.rb"
+			],
+			[
+				"gemfil",
+				"shutaf/Gemfile"
+			],
+			[
+				"fiel.lo",
+				"shutaf/Gemfile.lock"
+			],
+			[
+				"production.",
+				"shutaf/config/environments/production.rb"
+			],
+			[
+				"seeds",
+				"shutaf/db/seeds.rb"
+			],
+			[
+				"deploy",
+				"shutaf/config/deploy.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/radio-fm/radio-fm.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 499.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
