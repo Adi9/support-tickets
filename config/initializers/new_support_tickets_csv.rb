@@ -1,0 +1,1 @@
+SUPPORT_TICKETS_CSV_PATH = Rails.root.join("storage", "new_support_tickets.csv")
