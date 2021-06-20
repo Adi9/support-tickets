@@ -23,12 +23,12 @@
 
   <div class="field">
     <%= form.label :subject %>
-    <%= form.text_field :subject %>
+    <%= form.text_field :subject, required: true %>
   </div>
 
   <div class="field">
     <%= form.label :content %>
-    <%= form.text_area :content, rows: 15 %>
+    <%= form.text_area :content, rows: 15, required: true %>
   </div>
 
   <div class="actions">

@@ -1,7 +1,13 @@
 class SupportTicket < ApplicationRecord
   include AASM
 
+  require 'csv'
+
+  has_many :active_admin_comments, as: :resource, class_name: "ActiveAdmin::Comment"
+
   validates :requester_name, presence: true
+  validates :subject, presence: true
+  validates :content, presence: true
   validates :requester_email, format: { with: Devise.email_regexp }
 
   aasm column: :status do
@@ -20,34 +26,90 @@ class SupportTicket < ApplicationRecord
 
   def is_pending?
     # TODO: check if has comments
+    self.active_admin_comments.count > 0
   end
 
   def dump_to_csv
-    begin
-      lock_csv_file('a+') do |f|
-        line_count = f.readlines.size
-        # puts "SIZE: #{line_count}"
-        if line_count == 0
-          dump_csv_headers(f)
+    ret = false
+    cfs = CsvFileStore.get_csv_file_store
+
+    cfs.with_lock do
+      begin
+        cfs.lock_csv_file('a+') do |f|
+          line_count = f.readlines.size
+          # puts "SIZE: #{line_count}"
+          if line_count == 0
+            dump_csv_headers(f)
+          end
+
+          dump_csv_values(f)
         end
 
-        dump_csv_values(f)
+        ret = true
+      rescue
+      end
+    end
+
+    ret
+  end
+
+  # Imports new support tickets from csv
+  # @returns: number of imported or found tickets
+  def self.import_new_tickets(count_only = false)
+    imported_count = 0
+    cfs = CsvFileStore.get_csv_file_store
+
+    cfs.with_lock do
+      failed_rows = []
+      file_opened = false
+
+      begin
+        cfs.lock_csv_file('a+') do |f| # lock for write so we're exclusive
+          file_opened = true
+          csv = CSV.parse(f, headers: true)
+
+          if count_only
+            imported_count = csv.count
+          else
+            csv.each_with_index do |row, i|
+              st = SupportTicket.new(row.to_hash)
+              if st.save
+                imported_count += 1
+              else
+                failed_rows.push(row)
+              end
+            end
+          end
+        end
+      rescue Exception => e
+        Rails.logger.debug(e)
       end
 
-      return true
-    rescue
-      return false
+      if !count_only && file_opened
+        cfs.truncate!
+        unless failed_rows.blank?
+          cfs.lock_csv_file('a+') do |f|
+            st = SupportTicket.new
+            st.dump_csv_headers(f)
+            failed_rows.each do |csv_row|
+              f << csv_row
+            end
+          end
+        end
+      end
     end
+
+    return imported_count
+  end
+
+  def dump_csv_headers(file)
+    file << (exported_attributes.keys).join(',') + "\n"
   end
 
 private
 
   def exported_attributes
     self.attributes.except("id", "status", "updated_at")
-  end
-
-  def dump_csv_headers(file)
-    file << (exported_attributes.keys).join(',') + "\n"
   end
 
   def dump_csv_values(file)
@@ -66,44 +128,46 @@ private
       raise "Cannot sanitize value!"
     end
 
-    ['"', value.gsub('"','\"'), '"'].reject{|r| r.nil?}.join
+    value = value.gsub('"','\"')
+
+    ['"', value, '"'].reject{|r| r.nil?}.join
   end
 
-  def lock_csv_file(openmode = 'r', lockmode = nil)
-    filename = SUPPORT_TICKETS_CSV_PATH
+  # def self.lock_csv_file(openmode = 'r', lockmode = nil)
+  #   filename = SUPPORT_TICKETS_CSV_PATH
 
-    if openmode == 'r' || openmode == 'rb'
-      lockmode ||= File::LOCK_SH
-    else
-      lockmode ||= File::LOCK_EX
-    end
+  #   if openmode == 'r' || openmode == 'rb'
+  #     lockmode ||= File::LOCK_SH
+  #   else
+  #     lockmode ||= File::LOCK_EX
+  #   end
 
-    value = nil
+  #   value = nil
 
-    open(filename, openmode) do |f|
-      flock(f, lockmode) do
-        begin
-          value = yield f
-        ensure
-          f.flock(File::LOCK_UN)
-        end
-      end
+  #   open(filename, openmode) do |f|
+  #     SupportTicket.flock(f, lockmode) do
+  #       begin
+  #         value = yield f
+  #       ensure
+  #         f.flock(File::LOCK_UN)
+  #       end
+  #     end
 
-      return value
-    end
-  end
+  #     return value
+  #   end
+  # end
 
-  def flock(file, mode)
-    success = file.flock(mode)
-    if success
-      begin
-        yield file
-      ensure
-        file.flock(File::LOCK_UN)
-      end
-    end
+  # def self.flock(file, mode)
+  #   success = file.flock(mode)
+  #   if success
+  #     begin
+  #       yield file
+  #     ensure
+  #       file.flock(File::LOCK_UN)
+  #     end
+  #   end
 
-    return success
-  end
+  #   return success
+  # end
 
 end
