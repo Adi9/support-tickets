@@ -10,6 +10,10 @@ class SupportTicket < ApplicationRecord
   validates :content, presence: true
   validates :requester_email, format: { with: Devise.email_regexp }
 
+  scope :new_support_tickets, -> { where(status: 'new') }
+  scope :pending_support_tickets, -> { where(status: 'pending') }
+  scope :resolved_support_tickets, -> { where(status: 'resolved') }
+
   aasm column: :status do
     state :new, initial: true
     state :pending

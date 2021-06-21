@@ -15,6 +15,8 @@ ActiveAdmin.register SupportTicket do
   #   permitted
   # end
 
+  menu parent: 'Support Tickets', label: "All"
+
   collection_action :import_new_tickets, method: :post do
     imported_count = SupportTicket.import_new_tickets
     redirect_to admin_support_tickets_path, notice: "Successfully imported #{imported_count} support tickets"
