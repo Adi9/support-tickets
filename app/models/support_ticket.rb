@@ -5,10 +5,13 @@ class SupportTicket < ApplicationRecord
 
   has_many :active_admin_comments, as: :resource, class_name: "ActiveAdmin::Comment"
 
-  validates :requester_name, presence: true
+  belongs_to :user, optional: true
+
+  validates :requester_email, format: { with: Devise.email_regexp }, unless: :has_user?
+  validates :requester_name, presence: true, unless: :has_user?
+
   validates :subject, presence: true
   validates :content, presence: true
-  validates :requester_email, format: { with: Devise.email_regexp }
 
   scope :new_support_tickets, -> { where(status: 'new') }
   scope :pending_support_tickets, -> { where(status: 'pending') }
@@ -26,6 +29,10 @@ class SupportTicket < ApplicationRecord
     event :resolve do
       transitions from: :pending, to: :resolved
     end
+  end
+
+  def has_user?
+    !self.user.nil?
   end
 
   def is_pending?

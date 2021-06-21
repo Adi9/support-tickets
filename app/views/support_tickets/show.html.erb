@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Requester email:</strong>
+  <%= @support_ticket.requester_email %>
+</p>
+
+<p>
+  <strong>Requester name:</strong>
+  <%= @support_ticket.requester_name %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @support_ticket.status %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @support_ticket.subject %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @support_ticket.content %>
+</p>
+
+<%= link_to 'Edit', edit_support_ticket_path(@support_ticket) %> |
+<%= link_to 'Back', support_tickets_path %>

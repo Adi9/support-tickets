@@ -1,35 +1,39 @@
 <p id="notice"><%= notice %></p>
 
-<!--
-<h1>Support Tickets</h1>
-<table>
-  <thead>
-    <tr>
-      <th>Requester email</th>
-      <th>Requester name</th>
-      <th>Status</th>
-      <th>Subject</th>
-      <th>Content</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    < %  @support_tickets.each do |support_ticket| % >
+<% unless @support_tickets.nil? %>
+  <h1>Support Tickets</h1>
+  <table>
+    <thead>
       <tr>
-        <td>< % = support_ticket.requester_email % ></td>
-        <td>< % = support_ticket.requester_name % ></td>
-        <td>< % = support_ticket.status % ></td>
-        <td>< % = support_ticket.subject % ></td>
-        <td>< % = support_ticket.content % ></td>
-        <td>< % = link_to 'Show', support_ticket % ></td>
-        <td>< % = link_to 'Edit', edit_support_ticket_path(support_ticket) % ></td>
-        <td>< % = link_to 'Destroy', support_ticket, method: :delete, data: { confirm: 'Are you sure?' } % ></td>
+        <th>Status</th>
+        <th>Subject</th>
+        <th>Content</th>
+        <th colspan="3"></th>
       </tr>
-    < %  end % >
-  </tbody>
-</table>
- -->
+    </thead>
+
+    <tbody>
+      <%  @support_tickets.each do |support_ticket| %>
+        <tr>
+          <td><%= support_ticket.status %></td>
+          <td><%= support_ticket.subject %></td>
+          <td><%= support_ticket.content %></td>
+          <td><%= link_to 'Show', support_ticket %></td>
+          <td><%= link_to 'Edit', edit_support_ticket_path(support_ticket) %></td>
+          <td><%= link_to 'Destroy', support_ticket, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <%  end %>
+    </tbody>
+  </table>
+<% end %>
+
 <br>
 
 <%= link_to 'New Support Ticket', new_support_ticket_path %>
+<% if @logged_in_user.nil? %>
+  <%= link_to 'Login', new_user_session_path %>
+  <%= link_to 'Register', new_user_registration_path %>
+<% else %>
+  <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+<% end %>
