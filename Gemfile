@@ -64,6 +64,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pry'
 
 gem 'activeadmin'
+gem 'cancancan'
 
 # Plus integrations with:
 gem 'devise'

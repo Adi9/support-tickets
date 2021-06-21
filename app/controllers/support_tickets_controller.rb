@@ -1,9 +1,13 @@
 class SupportTicketsController < ApplicationController
 
+  # cancan
+  load_and_authorize_resource # param_method: :support_ticket_params
+
   USER_METHODS = [:show, :edit, :update, :destroy]
 
   before_action :authenticate_user!, only: USER_METHODS
   before_action :set_support_ticket, only: USER_METHODS
+
 
   # GET /support_tickets
   # GET /support_tickets.json
