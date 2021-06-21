@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple Support Ticket application with user registration and an admin UI.
 
-Things you may want to cover:
+Ruby version: `2.6.3`
+Rails version: `~> 5.2.4`
 
-* Ruby version
+To run:
 
-* System dependencies
+  bundle
+  rake db:create
+  rake db:migrate
+  rake db:seed
+  rails s
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Initial admin credentials for development:
+admin@tickets.com/password
